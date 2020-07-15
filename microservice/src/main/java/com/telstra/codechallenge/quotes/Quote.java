@@ -17,4 +17,5 @@ public class Quote {
     private Long id;
     private String quote;
   }
+
 }

@@ -1,6 +1,8 @@
 package com.telstra.codechallenge.helloworld;
 
 import java.util.concurrent.atomic.AtomicLong;
+
+import com.telstra.codechallenge.helloworld.HelloWorld;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;

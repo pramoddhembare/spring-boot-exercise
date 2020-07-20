@@ -3,7 +3,6 @@ package com.telstra.codechallenge.service.impl;
 import com.telstra.codechallenge.dtos.GithubRepositoriesDTO;
 import com.telstra.codechallenge.dtos.RepositoriesItemsDTO;
 import com.telstra.codechallenge.service.GithubRepostoriesService;
-import lombok.NoArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

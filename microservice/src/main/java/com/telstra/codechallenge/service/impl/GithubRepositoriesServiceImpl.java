@@ -64,7 +64,7 @@ public class GithubRepositoriesServiceImpl implements GithubRepostoriesService {
 
 
         //URI builder with query  parameter
-        UriComponentsBuilder uriBuilder = UriComponentsBuilder.fromHttpUrl(githubBaseUrl + "/repositories")
+        UriComponentsBuilder uriBuilder = UriComponentsBuilder.fromHttpUrl("https://api.github.com/search/repositories")
                 .queryParam("q", fromdate)
                 .queryParam("sort", "stars")
                 .queryParam("order", "desc");
@@ -72,7 +72,7 @@ public class GithubRepositoriesServiceImpl implements GithubRepostoriesService {
         ResponseEntity<GithubRepositoriesDTO> responseEntity = null;
         //rest call to github API
         try {
-            responseEntity = restTemplate.exchange(
+            responseEntity = new RestTemplate().exchange(
                     uriBuilder.toUriString(),
                     HttpMethod.GET,
                     requestEntity,
